@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -93,4 +93,75 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+body {
+  margin:0;
+  font-family:sans-serif;
+  color:white;
+  overflow:hidden;
+}
+
+/* canvas bakgrund */
+#liquid {
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #ff4da6,
+    #a0005a 60%,
+    #24001a
+  );
+}
+
+/* glass overlay */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  backdrop-filter: blur(40px);
+  background: rgba(255,255,255,0.04);
+  z-index:-1;
+}
+
+/* shine chrome */
+body::after{
+  content:"";
+  position:fixed;
+  inset:-50%;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(255,255,255,0.15),
+    transparent 60%
+  );
+  animation:shine 14s linear infinite;
+}
+
+@keyframes shine{
+  from{ transform:translateX(-30%) rotate(8deg);}
+  to{ transform:translateX(30%) rotate(8deg);}
+}
+
+.hero{
+  position:relative;
+  padding:12vh 8vw;
+}
+
+h1{
+  font-size:7vw;
+  margin:10px 0;
+  text-shadow:
+    0 0 20px rgba(255,255,255,0.4),
+    0 0 40px rgba(255,0,140,0.4);
+}
+
+.small{
+  letter-spacing:2px;
+  opacity:0.8;
+}
+
+.tag{
+  opacity:0.7;
 }
