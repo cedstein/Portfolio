@@ -6,17 +6,78 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <canvas id="liquid"></canvas>
-  <div id="app">
-    <section class="hero">
-      <p class="small">Portfolio: Cecilia Edstein</p>
-      <h1>Frontend Developer</h1>
-      <p class="tag">+Sales & Marketing</p>
-    </section>
-  </div>
+  <canvas id="canvas"></canvas>
+  <header>
+    <nav id="nav">
+      <a href="#about">Om mig</a>
+      <a href="#projects">Projekt</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <div id="app"></div>
+  <section class="hero glass">
+    <p class="small">PORTFOLIO: CECILIA EDSTEIN</p>
+    <h1>Frontend Developer</h1>
+    <p class="tag">Student<!--  +Sälj &amp; Marknadförare --></p>
+  </section>
+
+
+  <section id="about" class=" sectionAbout">
+    <h2>Om mig</h2>
+    <p>Jag är frontendutvecklare som gillar att skapa responsiva och användarvänliga hemsidor.</p>
+  </section>
+
+  <section id="skills">
+    <div class="section-inner">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">TypeScript</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">Vite</div>
+        <div class="skill-card">TailwindCSS</div>
+        <div class="skill-card">Git</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-inner">
+      <h2>Mina Projekt</h2>
+
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Todo App</h3>
+          <p>En app för att hantera uppgifter.</p>
+        </div>
+
+        <div class="project">
+          <h3>Bac Pac</h3>
+          <p>Grupparbete för en webbshop</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Email: example@email.com</p>
+  </section>
+
+
+  <footer>
+
+  </footer>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
