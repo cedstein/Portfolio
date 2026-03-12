@@ -1,0 +1,112 @@
+.projects-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+  align-items:stretch;
+}
+
+.project{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  min-width:0;
+  padding:0;
+  border-radius:16px;
+  overflow:hidden;
+
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.15);
+  backdrop-filter:blur(6px);
+
+  transition:0.35s;
+}
+
+.project img{
+  width:100%;
+  margin:0;
+  height:auto;
+  aspect-ratio:16 / 7;
+  object-fit:cover;
+  border-radius:0;
+  display:block;
+}
+
+.project-content{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  padding:20px;
+  height:100%;
+}
+
+.project-content p{
+  margin:0;
+  display:-webkit-box;
+  line-clamp:4;
+  -webkit-line-clamp:4;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+
+.project:hover{
+  transform:translateY(-10px);
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ff0098, #ff6ad5, #ec46d8, #ff0098);
+  background-size: 300% 300%;
+  transition: transform 0.35s, box-shadow 0.35s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.project-btn:hover {
+  transform: scale(1.05);
+}
+
+.project-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 14px rgba(255,0,152,0.6);
+  animation: gradientSpin 3s linear infinite;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.project-skill {
+  padding: 6px 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: transform 0.35s;
+}
+
+.project-skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,0,152,0.5);
+}

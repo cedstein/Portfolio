@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 const canvas = document.getElementById("stars") as HTMLCanvasElement;
 if (canvas) {
   const ctx = canvas.getContext("2d");

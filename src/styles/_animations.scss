@@ -1,0 +1,59 @@
+@keyframes gradientSpin {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+@keyframes skillGlow{
+  0%{
+    box-shadow:
+      0 4px 12px rgba(0,0,0,0.4),
+      0 0 4px rgba(255,0,152,0.15);
+  }
+
+  50%{
+    box-shadow:
+      0 6px 16px rgba(0,0,0,0.45),
+      0 0 10px rgba(255,0,152,0.35),
+      0 0 18px rgba(236,70,216,0.25);
+  }
+
+  100%{
+    box-shadow:
+      0 4px 12px rgba(0,0,0,0.4),
+      0 0 4px rgba(255,0,152,0.15);
+  }
+}
+
+@keyframes floatProfile{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-12px);}
+  100%{transform:translateY(0);}
+}
+
+@keyframes starsTwinkle{
+  0%{
+    opacity:0.62;
+    filter:brightness(0.92) saturate(104%) drop-shadow(0 0 2px rgba(255,255,255,0.35));
+  }
+  50%{
+    opacity:1;
+    filter:brightness(1.6) saturate(150%) drop-shadow(0 0 7px rgba(255,255,255,0.65));
+  }
+  100%{
+    opacity:0.66;
+    filter:brightness(1.02) saturate(112%) drop-shadow(0 0 3px rgba(255,255,255,0.45));
+  }
+}
+
+@keyframes starsDrift{
+  0%{transform:translate3d(-0.8%,0.5%,0) scale(1);}
+  50%{transform:translate3d(0.9%,-0.7%,0) scale(1.01);}
+  100%{transform:translate3d(-0.6%,0.4%,0) scale(1);}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .hero::after{
+    animation:none;
+  }
+}
