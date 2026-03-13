@@ -23,6 +23,7 @@ section p{
   max-width:60ch;
 }
 
+
 #about{
   background:#1A0D1F;
   color:#fff;
@@ -31,6 +32,9 @@ section p{
 #about p{
   text-align:center;
   margin:auto;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
 }
 
 #projects{
