@@ -1,4 +1,4 @@
-type Star = {
+/* type Star = {
   x: number;
   y: number;
   size: number;
@@ -65,3 +65,4 @@ export function initStarsCanvas(canvasId = "stars"): void {
   createStars();
   draw();
 }
+ */

@@ -1,4 +1,4 @@
 import "./style.scss";
-import { initStarsCanvas } from "./stars";
+/* import { initStarsCanvas } from "./stars";
 
-initStarsCanvas();
+initStarsCanvas(); */
